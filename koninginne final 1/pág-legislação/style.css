@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+/* https://www.youtube.com/watch?v=JJkuGvfFKOw */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+img {
+    border-radius: 10px;
+    /* Você pode ajustar o valor conforme necessário */
+    margin-bottom: 8px;
+    /* Adiciona um espaço entre a imagem e a legenda */
+    margin-left: 0px;
+    /* Adiciona um espaço à esquerda da imagem, ajuste conforme necessário */
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container .box {
+    position: relative;
+    width: 350px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    border-radius: 14px;
+    margin: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container .box:before {
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .2);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.container .box .icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700px;
+    transition: 1s;
+}
+
+.container .box:nth-child(1) .icon {
+    box-shadow: 0 0 0 0 #ff8b02;
+    background-color: #ff8b02;
+}
+
+.container .box:nth-child(1):hover .icon {
+    box-shadow: 0 0 0 400px #ff8b02;
+    background-color: #ff8b02;
+}
+
+.container .box:nth-child(2) .icon {
+    box-shadow: 0 0 0 0 #fd2b2b;
+    background-color: #fd2b2b;
+}
+
+.container .box:nth-child(2):hover .icon {
+    box-shadow: 0 0 0 400px #fd2b2b;
+    background-color: #fd2b2b;
+}
+
+.container .box:nth-child(3) .icon {
+    box-shadow: 0 0 0 0 #b50615;
+    background-color: #b50615;
+}
+
+.container .box:nth-child(3):hover .icon {
+    box-shadow: 0 0 0 400px #b50615;
+    background-color: #b50615;
+}
+
+.container .box .content {
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container .box:hover .content {
+    color: #fff;
+}
+
+.container .box .content h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.container .box .content button {
+    display: block;
+    margin: 15px auto;
+    /* Ajuste conforme necessário */
+    padding: 10px 20px;
+    color: #fff;
+    /* Cor do texto do botão */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container .box .content button:hover {
+    background-color: #31010783;
+    /* Cor de fundo do botão ao passar o mouse */
+}
+
+.botao1 {
+    background-color: #ff8b02;
+    /* Cor de fundo do botão */
+}
+
+.botao2 {
+    background-color: #fd2b2b;
+    /* Cor de fundo do botão */
+}
+
+.botao3 {
+    background-color: #b50615;
+    /* Cor de fundo do botão */
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}

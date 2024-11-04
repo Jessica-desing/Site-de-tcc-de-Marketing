@@ -1,0 +1,60 @@
+
+#curriculo-container {
+    background-color: rgb(255, 247, 132); /* Cor de fundo branca para o conteúdo do currículo */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+header, section, footer {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h2 {
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+#vermais-btn {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+#curriculo {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    transition: max-width 0.5s ease-in-out;
+}
+
+#curriculo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+#curriculo-container1 {
+    background-color: rgb(255, 136, 132); /* Cor de fundo branca para o conteúdo do currículo */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+

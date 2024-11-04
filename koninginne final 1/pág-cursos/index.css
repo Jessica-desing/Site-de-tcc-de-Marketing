@@ -1,0 +1,60 @@
+img {
+    border-radius: 10px;
+    /* Você pode ajustar o valor conforme necessário */
+    margin-bottom: 8px;
+    /* Adiciona um espaço entre a imagem e a legenda */
+    margin-left: 0px;
+    /* Adiciona um espaço à esquerda da imagem, ajuste conforme necessário */
+    width: 100%;
+}
+body{
+    background: rgb(178, 255, 216);
+}
+h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    background: linear-gradient(to right, #102B26, #257B6B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 10px;
+    font-size: 55px;
+    z-index: 1;
+    max-width: 100%;
+    /* Certifica-se de que a imagem não ultrapasse a largura do contêiner */
+    height: auto;
+    margin-right: 20px;
+}
+.sebrae{
+        border-radius: 10px;
+        margin-bottom: 8px;
+        margin-left: 0px;
+        width: 20%;
+        float: left;
+}
+h2{
+    font-size: 25px;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+}
+a{
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    background-color: #c1d9ee;
+}
+.curso1{
+    color: rgb(253, 253, 253);
+    background-color: #045cbb;
+}
+.curso2{
+    color: rgb(253, 253, 253);
+    background-color: #045cbb;
+}
+.curso3{
+    color: rgb(253, 253, 253);
+    background-color: #045cbb;;
+}
+.curso4{
+    color: rgb(253, 253, 253);
+    background-color: #045cbb;
+}
+    

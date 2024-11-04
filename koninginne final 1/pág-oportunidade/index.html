@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" class="logo">
+    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="index3.css">
+    <link rel="stylesheet" href="index4.css">
+
+</head>
+
+<body>
+    <img src="/pág-oportunidade/img/Legis (1) (1).png" alt="" class="">
+    <main class="cards">
+        <section class="card contact">
+            <div class="icon">
+            <img src="/pág-oportunidade/img/tupi.png" alt="">
+            </div>
+            <h3>Agência tupiniquim</h3>
+            <span>Marketing Digital</span>
+            <button>Entrar</button>
+        </section>
+        <section class="card shop">
+            <div class="icon">
+            <img src="" alt="">
+            </div>
+            <h3>Microempresa</h3>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+            <button>Entrar</button>
+        </section>
+        <section class="card about">
+            <div class="icon">
+            <img src="/pág-oportunidade/img/duo.png" alt="">
+            </div>
+            <h3>Duo Studio</h3>
+            <span>Marketing Digital</span>
+            <button>Entrar</button>
+        </section>
+        <section class="card about">
+            <div class="icon">
+            <img src="" alt="">
+            </div>
+            <h3>Microempresa</h3>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+            <button>Entrar</button>
+        </section>
+    </main>
+</head>
+<body>
+<div>
+    <h2 class="curri">Biblioteca de Curriculos:</h2>
+</div>
+<div class="container">
+    <h2>Anexar Currículo</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="curriculo">Escolha seu currículo:</label>
+        <input type="file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx">
+        <button type="submit">Enviar Currículo</button>
+    </form>
+</div>
+<div id="curriculo-container">
+    <div id="curriculo">
+        <header>
+            <img src="/pág-chat/img/cha mu4.jpg" alt="Sua Foto">
+            <h1>Michelle Nascimento</h1>
+            <p>Endereço | Cidade, Estado | Telefone | E-mail</p>
+        </header>
+
+        <footer>
+            <p id="vermais-btn" onclick="toggleCurriculo()">Ver Mais</p>
+            <p>LinkedIn | GitHub | Outras Redes Sociais</p>
+        </footer>
+
+        <section id="main-content">
+            <h2>Resumo Profissional</h2>
+            <p>Um resumo breve sobre você, suas habilidades e experiências.</p>
+        </section>
+
+        <section id="education-section" class="hidden">
+            <h2>Educação</h2>
+            <ul>
+                <li>
+                    <strong>Nome da Instituição</strong> - Grau obtido<br>
+                    Período de Estudo
+                </li>
+                <!-- Adicione mais informações educacionais conforme necessário -->
+            </ul>
+        </section>
+
+        <section id="skills-section" class="hidden">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Habilidade 1</li>
+                <li>Habilidade 2</li>
+                <!-- Adicione mais habilidades conforme necessário -->
+            </ul>
+        </section>
+    </div>
+</div>
+
+<script>
+    function toggleCurriculo() {
+        const curriculo = document.getElementById('curriculo');
+        const educationSection = document.getElementById('education-section');
+        const skillsSection = document.getElementById('skills-section');
+        const verMaisBtn = document.getElementById('vermais-btn');
+
+        if (educationSection.classList.contains('hidden')) {
+            educationSection.classList.remove('hidden');
+            skillsSection.classList.remove('hidden');
+            verMaisBtn.textContent = 'Ver Menos';
+            curriculo.style.maxWidth = '100%';
+        } else {
+            educationSection.classList.add('hidden');
+            skillsSection.classList.add('hidden');
+            verMaisBtn.textContent = 'Ver Mais';
+            curriculo.style.maxWidth = '300px'; // ou outro valor desejado
+        }
+    }
+</script>
+<div id="curriculo-container1">
+    <div id="curriculo">
+        <header>
+            <img src="/pág-chat/img/cha mu2.jpg" alt="Sua Foto">
+            <h1>Lorena Cristina</h1>
+            <p>Endereço | Cidade, Estado | Telefone | E-mail</p>
+        </header>
+
+        <footer>
+            <p id="vermais-btn" onclick="toggleCurriculo()">Ver Mais</p>
+            <p>LinkedIn | GitHub | Outras Redes Sociais</p>
+        </footer>
+
+        <section id="main-content">
+            <h2>Resumo Profissional</h2>
+            <p>Um resumo breve sobre você, suas habilidades e experiências.</p>
+        </section>
+
+        <section id="education-section" class="hidden">
+            <h2>Educação</h2>
+            <ul>
+                <li>
+                    <strong>Nome da Instituição</strong> - Grau obtido<br>
+                    Período de Estudo
+                </li>
+                <!-- Adicione mais informações educacionais conforme necessário -->
+            </ul>
+        </section>
+
+        <section id="skills-section" class="hidden">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Habilidade 1</li>
+                <li>Habilidade 2</li>
+                <!-- Adicione mais habilidades conforme necessário -->
+            </ul>
+        </section>
+    </div>
+</div>
+
+<script>
+    function toggleCurriculo() {
+        const curriculo = document.getElementById('curriculo');
+        const educationSection = document.getElementById('education-section');
+        const skillsSection = document.getElementById('skills-section');
+        const verMaisBtn = document.getElementById('vermais-btn');
+
+        if (educationSection.classList.contains('hidden')) {
+            educationSection.classList.remove('hidden');
+            skillsSection.classList.remove('hidden');
+            verMaisBtn.textContent = 'Ver Menos';
+            curriculo.style.maxWidth = '100%';
+        } else {
+            educationSection.classList.add('hidden');
+            skillsSection.classList.add('hidden');
+            verMaisBtn.textContent = 'Ver Mais';
+            curriculo.style.maxWidth = '300px'; // ou outro valor desejado
+        }
+    }
+</script>
+
+
+</body>
+
+</html>

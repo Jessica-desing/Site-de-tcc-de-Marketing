@@ -1,0 +1,32 @@
+#secao_03 {
+    margin: 0;
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(to right, #8f0316 0%, #b71f21 63%, #b71f21 63%, #d37272 100%);
+    position: relative;
+    padding: 40px;
+}
+
+.icon-prcr {
+    width: 200px;
+    margin: 3%;
+    z-index: 1;
+}
+
+#pai-dos-icons {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome {
+    background: linear-gradient(to right, #ce7808, #ffe44d, #fffef8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 10px;
+    font-size: 55px;
+    z-index: 1;
+}

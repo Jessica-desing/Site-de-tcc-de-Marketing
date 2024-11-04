@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+img{
+    border-radius: 10px;
+    /* Você pode ajustar o valor conforme necessário */
+    margin-bottom: 8px;
+    /* Adiciona um espaço entre a imagem e a legenda */
+    margin-left: 0px;
+    /* Adiciona um espaço à esquerda da imagem, ajuste conforme necessário */
+    width: 100%;
+}
+
+body {
+    background: rgb(255, 174, 107);
+    
+}
+.curri{
+    font-size: 65px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: rgb(255, 242, 121); /* Cor do texto */
+    background: linear-gradient(to right, rgb(211, 25, 0), rgb(248, 142, 21)); 
+    padding: 10px; 
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Nome - Currículo</title>
+    <style>
+        html {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f0f0f0; /* Cor de fundo cinza claro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        #curriculo-container {
+            background-color: white; /* Cor de fundo branca para o conteúdo do currículo */
+            padding: 20px; /* Espaçamento interno */
+            border-radius: 10px; /* Cantos arredondados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+        }
+
+        header, section, footer {
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        h2 {
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #vermais-btn {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        #curriculo {
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            transition: max-width 0.5s ease-in-out;
+        }
+
+        #curriculo img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="curriculo-container">
+        <div id="curriculo">
+            <header>
+                <img src="sua-foto.jpg" alt="Sua Foto">
+                <h1>Seu Nome</h1>
+                <p>Endereço | Cidade, Estado | Telefone | E-mail</p>
+            </header>
+
+            <footer>
+                <p id="vermais-btn" onclick="toggleCurriculo()">Ver Mais</p>
+                <p>LinkedIn | GitHub | Outras Redes Sociais</p>
+            </footer>
+
+            <section id="main-content">
+                <h2>Resumo Profissional</h2>
+                <p>Um resumo breve sobre você, suas habilidades e experiências.</p>
+            </section>
+
+            <section id="education-section" class="hidden">
+                <h2>Educação</h2>
+                <ul>
+                    <li>
+                        <strong>Nome da Instituição</strong> - Grau obtido<br>
+                        Período de Estudo
+                    </li>
+                    <!-- Adicione mais informações educacionais conforme necessário -->
+                </ul>
+            </section>
+
+            <section id="skills-section" class="hidden">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>Habilidade 1</li>
+                    <li>Habilidade 2</li>
+                    <!-- Adicione mais habilidades conforme necessário -->
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        function toggleCurriculo() {
+            const curriculo = document.getElementById('curriculo');
+            const educationSection = document.getElementById('education-section');
+            const skillsSection = document.getElementById('skills-section');
+            const verMaisBtn = document.getElementById('vermais-btn');
+
+            if (educationSection.classList.contains('hidden')) {
+                educationSection.classList.remove('hidden');
+                skillsSection.classList.remove('hidden');
+                verMaisBtn.textContent = 'Ver Menos';
+                curriculo.style.maxWidth = '100%';
+            } else {
+                educationSection.classList.add('hidden');
+                skillsSection.classList.add('hidden');
+                verMaisBtn.textContent = 'Ver Mais';
+                curriculo.style.maxWidth = '300px'; // ou outro valor desejado
+            }
+        }
+    </script>
+
+</body>
+</html>
